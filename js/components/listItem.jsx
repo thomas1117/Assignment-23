@@ -11,10 +11,11 @@ var ListItem = React.createClass({
 	
    	render:function() {
 		var props=this.props.item;
-		
-		return(<ul className="listContainer">
+		console.log(props);
+
+		return(<ul key={this.props.objectId} className="listContainer">
 				{this.props.item.map(function(item){
-					return(<Item item={item.list}/>)
+					return(<Item item={item.list} objectId={item.objectId} addInput={this._addInput}/>)
 				})}	
 				</ul>
 

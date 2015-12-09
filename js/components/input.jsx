@@ -45,7 +45,7 @@ var Input = React.createClass({
 		return(	<div>
 				<h1>Todos</h1>
 				<form onSubmit={this._submit}>
-				<input id="inputItem" onChange={this._onChange} value={this.state.value} placeholder="What needs to be done?"/>
+				<input id="inputItem" onChange={this._onChange} autoComplete='off' value={this.state.value} placeholder="What needs to be done?"/>
 				</form>
 			</div>
 		)

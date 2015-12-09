@@ -12,7 +12,7 @@ var App = React.createClass({
 	getInitialState: function () {
 		
 		return {
-			item: this.props.item,
+			item: this.props.item
 			
 		}
 	},
